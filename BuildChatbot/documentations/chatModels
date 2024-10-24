@@ -1,0 +1,27 @@
+Definition : 
+    Large Language Models (LLMs) are advanced machine learning models that excel in a wide 
+range of language-related tasks such as text generation, translation, summarization, 
+question answering, and more, without needing task-specific tuning for every scenario.
+The newest generation of chat models offer additional capabilities: 
+- Tool calling => API
+- Structued output: respond in a JSON that matches given schema
+- Multimodality : working with data other than text; images, audio and video  
+
+
+Key methods: 
+- invoke : interract with the chat model
+- stream : stream the output of a chat model once generated 
+- batch : **batch multiple requests to a chat model together for more efficient processing
+- bind_tools : bind tool to a chat model for use in the model's execution context.
+- with_structured_output : a wrapper around the invoke method for models that natively support structured output 
+
+
+Input & output 
+
+- langchain Message format: 
+- OpenAI's Message format: format put in place with OpenAI 
+
+Standard parameters  : 
+chat models have standardized parameters that can be used to configure the model : 
+https://python.langchain.com/docs/concepts/chat_models/ 
+
