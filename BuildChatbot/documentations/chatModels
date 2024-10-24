@@ -25,3 +25,13 @@ Standard parameters  :
 chat models have standardized parameters that can be used to configure the model : 
 https://python.langchain.com/docs/concepts/chat_models/ 
 
+Tool calling  
+- Tools can be external api, api we currently use, permanent static data etc ...
+- Short story agents will use tools to perform tasks.  
+
+
+Advanced topics: 
+- Rate limiting : Many chat model providers impose a limit on the number of requests that can be made in a given time period 
+
+Caching  
+- Chat model can be slow can be slow so caching previous responses can be usefull 
