@@ -1,0 +1,29 @@
+
+Prompt templates : 
+prompt templates help to translate user input and parameters inro instructions for a language model.
+Prompt Templates take as input a dictionary, where each key represents a variable in prompt template to fill in.
+there are a few different types of prompt templates : 
+
+String Prompt Templates  : 
+
+from langchain_core.prompts import PromptTemplate
+
+prompt_template = PromptTemplate.from_template("Tell me a joke about {topic}")
+
+prompt_template.invoke({"topic": "cats"}) 
+
+
+ChatPromptTemplates 
+
+from langchain_core.prompts import ChatPromptTemplate
+
+prompt_template = ChatPromptTemplate([
+    ("system", "You are a helpful assistant"),
+    ("user", "Tell me a joke about {topic}")
+])
+
+prompt_template.invoke({"topic": "cats"})
+
+
+These two template are limited to a specefic one question and it is about the joke 
+what i remarked is that i should use NLP for examlpe
